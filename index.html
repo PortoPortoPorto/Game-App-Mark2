@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9bbcbc0f4c.js" crossorigin="anonymous"></script>
+	<link rel = "stylesheet" href = "CSS/style.css">
+	<title>Game Collection App</title>
+</head>
+<body>
+<header class = "header">
+	<h1>Game Collection Database</h1>
+	<i class="fa-solid fa-gamepad fa-xl" style="color: #c7c2f2;"></i>
+</header>
+<div name = "page-container" class = "page-container">
+	<div class = button-container><button id = "add-game-btn">Add a Game</button></div>
+	<div class= modal-container>
+		<div name = "modal-content" class = "modal-content">
+			<div class = "modal-header">
+				<h2>Add Game to List</h2>
+				<button class= "close-btn">X</button>
+			</div>
+			<div class = "modal-body">
+				<div name = "form-headings" class= "form-headings">
+					<h3>Game Title:</h3>
+					<h3>Platform:</h3>
+					<h3>Genre:</h3>
+					<h3>Studio:</h3>
+				</div>
+				<div name= "form-inputs" class = "form-inputs">
+					<input type = "text" class = "form-input" id= "game-title-input" placeholder = "Input game title"></input>
+					<select class = "dropdown-select" id = "platform-select">
+						<option class= "option" value = "PS3">PS3</option>
+						<option class= "option" value = "PS4">PS4</option>
+						<option class= "option" value = "Switch">Switch</option>
+					</select>
+					<select class = "dropdown-select" id = "genre-select">
+						<option class= "option" value = "RPG">RPG</option>
+						<option class= "option" value = "Horror">Horror</option>
+						<option class= "option" value = "Sports">Sports</option>
+						<option class= "option" value = "Racing">Racing</option>
+						<option class= "option" value = "Action">Action</option>
+						<option class= "option" value = "Adventure">Adventure</option>
+						<option class= "option" value = "Simulation">Simulation</option>
+						<option class= "option" value = "Fighting">Fighting</option>
+						<option class= "option" value = "FPS">FPS</option>
+						<option class= "option" value = "Platformer">Platformer</option>
+						<option class= "option" value = "Strategy">Strategy</option>
+					</select>
+					<input type = "text" class = "form-input" id = "studio-input" placeholder = "Input studio name"></input> 
+					<input type = "submit" class = "submit-button" id = "hidden-submit-button"></input>  
+				</div> 
+				<input type = "submit" class = "submit-button" id = "visible-submit-button"></input> 
+			</div>
+		</div>	
+	</div>
+
+	<div id= "your-games">
+		<h1>Your Games</h1>
+		<h2 id= "total-collection"></h2>
+	</div>
+	<div name = "game-collection-container" class = "game-collection-container" id = "game-collection-container">
+		<div name = "PS3-game-list" class = "game-list" id = "PS3-game-list">
+			<div class = "console-header" id = "ps3-header">
+				<h2>PS3</h2>
+				<div ><i class="fa-solid fa-caret-up fa-2xl big-caret"></i></div>
+			</div> 
+			<div class = "titles"><span class = "titles-number">x</span>titles</div>
+		</div>
+		<div name = "PS4-game-list" class = "game-list" id = "PS4-game-list">
+			<div class = "console-header" id = "ps4-header">
+				<h2>PS4</h2>
+				<div ><i class="fa-solid fa-caret-up fa-2xl big-caret"></i></div>
+			</div> 
+			<div class = "titles"><span class = "titles-number">x</span>titles</div>
+		</div>
+		<div name = "Switch-game-list" class = "game-list" id = "Switch-game-list">
+			<div class = "console-header" id = "switch-header">
+				<h2>Switch</h2>
+				<div ><i class="fa-solid fa-caret-up fa-2xl big-caret"></i></div>
+			</div> 
+			<div class = "titles"><span class = "titles-number">x</span>titles</div>
+		</div>
+	</div>
+</div>
+<script type= "text/javascript" src= "JS/main.js"></script>
+</body>
+</html>
+
+
+
